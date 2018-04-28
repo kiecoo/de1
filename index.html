@@ -1,4 +1,4 @@
-//1-edit-----create new v11-1 (based v11-0-success)
+//1-edit-----create new v11-1 (based v11-0-success) debug1
 
 <!doctype html>	
 	<html>
@@ -12,6 +12,7 @@
 	    <script>
 	   
 	var  getGithubData = require('./index.js')   
+	var data1= getGithubData ()
 	
 	var bel = require('bel')
 	var csjs = require('csjs-inject')
@@ -129,10 +130,10 @@
 	    padding:.1px;
 	  }
 	`
-	function profile () {
-	   var data= getGithubData ()
+	function profile (x_data) {
 	  
-	  var ninasProfile      = data[0]
+	  
+	  var ninasProfile      = x_data[0]
     var username          = ninasProfile.username
 	  
 	  var name              = 'Nina'
@@ -194,7 +195,7 @@
 	  return el
 	}
 	 
-	var x= profile()
+	var x= profile(data1)
 	document.body.appendChild(x)
 	   
 	   
