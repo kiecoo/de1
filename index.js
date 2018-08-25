@@ -1,6 +1,9 @@
-var minixhr = require('minixhr')
+// index.js
 
-module.exports = getGithubData
+  
+  var minixhr = require('minixhr')
+
+  module.exports = getGithubData
 
 
 /**************************************************************************
